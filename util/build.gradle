@@ -11,8 +11,9 @@ buildscript {
 }
 
 plugins {
-	id "io.spring.dependency-management" version "1.0.5.RELEASE"
+	id "io.spring.dependency-management" version "1.0.9.RELEASE"
 }
+
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -25,12 +26,11 @@ repositories {
 	mavenCentral()
 }
 
-
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-webflux')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
-	imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
 }

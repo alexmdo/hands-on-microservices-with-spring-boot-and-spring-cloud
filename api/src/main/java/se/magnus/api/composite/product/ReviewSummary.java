@@ -23,5 +23,4 @@ public class ReviewSummary {
     public String getSubject() {
         return subject;
     }
-
 }

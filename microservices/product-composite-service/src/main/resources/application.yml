@@ -1,7 +1,5 @@
-server:
-  port: 7009
-  error:
-    include-binding-errors: always
+server.port: 7000
+server.error.include-message: always
 
 app:
   product-service:

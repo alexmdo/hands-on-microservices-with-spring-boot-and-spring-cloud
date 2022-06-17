@@ -1,7 +1,6 @@
 package se.magnus.api.core.review;
 
 public class Review {
-
     private final int productId;
     private final int reviewId;
     private final String author;
@@ -10,12 +9,12 @@ public class Review {
     private final String serviceAddress;
 
     public Review() {
-        this.productId = 0;
-        this.reviewId = 0;
-        this.author = null;
-        this.subject = null;
-        this.content = null;
-        this.serviceAddress = null;
+        productId = 0;
+        reviewId = 0;
+        author = null;
+        subject = null;
+        content = null;
+        serviceAddress = null;
     }
 
     public Review(int productId, int reviewId, String author, String subject, String content, String serviceAddress) {

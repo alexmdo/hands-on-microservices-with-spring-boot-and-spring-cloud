@@ -1,7 +1,6 @@
 package se.magnus.util.exceptions;
 
 public class InvalidInputException extends RuntimeException {
-
     public InvalidInputException() {
     }
 
@@ -16,5 +15,4 @@ public class InvalidInputException extends RuntimeException {
     public InvalidInputException(Throwable cause) {
         super(cause);
     }
-
 }

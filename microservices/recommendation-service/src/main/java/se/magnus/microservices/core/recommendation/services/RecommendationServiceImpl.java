@@ -26,11 +26,12 @@ public class RecommendationServiceImpl implements RecommendationService {
 
     @Override
     public List<Recommendation> getRecommendations(int productId) {
+
         if (productId < 1) throw new InvalidInputException("Invalid productId: " + productId);
 
         if (productId == 113) {
             LOG.debug("No recommendations found for productId: {}", productId);
-            return new ArrayList<>();
+            return  new ArrayList<>();
         }
 
         List<Recommendation> list = new ArrayList<>();
@@ -42,5 +43,4 @@ public class RecommendationServiceImpl implements RecommendationService {
 
         return list;
     }
-
 }
