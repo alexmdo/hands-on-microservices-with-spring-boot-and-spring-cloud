@@ -10,15 +10,15 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @Component
-public class ServiceUtils {
+public class ServiceUtil {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ServiceUtils.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ServiceUtil.class);
 
     private final String port;
     private String serviceAddress;
 
     @Autowired
-    public ServiceUtils(@Value("${server.port}") String port) {
+    public ServiceUtil(@Value("${server.port}") String port) {
         this.port = port;
     }
 
